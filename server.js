@@ -24,7 +24,14 @@ io.on('connection', socket => {
        io.emit('message', 'a user has left the chat');
    });
 
+   //listen for chatMessage
+   socket.on('chatMessage', msg => {
+       console.log(msg)
+       io.emit('message', msg);
+   })
+
 });
+
 
 const PORT = 8080 || process.env.PORT;
 
