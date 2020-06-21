@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
+	--dark-color-a: #c5a3db;
+	--dark-color-b: #961a8b;
 	--light-color: #e6e9ff;
-	--success-color: #5cb85c;
+	--success-color: #755cb8;
 	--error-color: #d9534f;
 }
 
@@ -15,10 +15,13 @@
 }
 
 body {
+	background: #d9a7c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: var(--light-color);
 	margin: 20px;
+
 }
 
 ul {
